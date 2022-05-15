@@ -1,0 +1,96 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr{
+    width: 40%;
+    color: aqua;
+}
+.holiday-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.holiday-row{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1em;
+    color: white;
+    justify-content: space-around;
+    padding: 1em;
+}
+.holiday-row-item-1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Holidays/1.jpg);
+}
+.holiday-row-item-1:hover{
+    background-image: url(../img/Holidays/1.jpg);
+}
+.holiday-row-item-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/Holidays/2.jpg) ;
+}
+.holiday-row-item-2:hover{
+    background-image: url(../img/Holidays/2.jpg);
+}
+.holiday-row-item-3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/Holidays/3.jpg);
+}
+.holiday-row-item-3:hover{
+    background-image: url(../img/Holidays/3.jpg);
+}
+.holiday-row-item-4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/Holidays/4.jpg);
+}
+.holiday-row-item-4:hover{
+    background-image: url(../img/Holidays/4.jpg);
+}
+
+.holiday-row-item-5{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Holidays/5.jpg);
+}
+.holiday-row-item-5:hover{
+    background-image: url(../img/Holidays/5.jpg);
+}
+.holiday-row-item-6{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/Holidays/6.jpg);
+}
+.holiday-row-item-6:hover{
+    background-image: url(../img/Holidays/6.jpg);
+}
+.holiday-row-item{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    justify-content: center;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.holiday-row-item:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 20px 4px black;
+    text-shadow: 2px 2px 2px black;
+}
+
+@media only screen and (max-width: 600px){
+    .holiday-row{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        padding: 1em;
+    }
+    .holiday-row-item{
+        width: 100%;
+        padding: 0%;
+    }
+    .holiday-container{
+       align-items: unset;
+       text-align: center;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 800px){
+    .holiday-row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

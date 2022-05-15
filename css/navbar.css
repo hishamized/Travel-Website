@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+}
+li{
+    list-style-type: none;
+    margin: 0px 25px 0px 25px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: hsl(0, 0%, 12%);
+    padding: 1em;
+    color: white;
+}
+.nav-item{
+    display: flex;
+    flex-direction: row;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+.dropbtn{
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0.8em;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.dropdown-content a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.packages{
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropbtn{
+    background-color: hsl(25, 100%, 50%);
+    transition: 0.5s;
+}
+#logo{
+    max-width: 10%;
+}
+button{
+    margin: 0px 25px 0px 25px;
+    padding: 1em;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#talk{
+    background-color: hsl(219, 100%, 22%);
+}
+#call{
+    background-color: hsl(25, 100%, 50%);
+}
+#talk:hover{
+    background-color: hsl(219, 89%, 34%);
+}
+#call:hover{
+    background-color: hsl(25, 73%, 51%);
+}
+
+#on, #off{
+    display: none;
+    background-color: transparent;
+    align-self: flex-end;
+    padding: 0px;
+}
+@media only screen and (max-width: 600px)
+{
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo{
+        max-width: 25%;
+    }
+    .dropdown-parent{
+        display: none;
+    }
+    #off{
+        display: inherit;
+        }
+}

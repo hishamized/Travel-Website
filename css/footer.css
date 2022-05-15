@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style-type: none;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.expert{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid red;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.expert h2, .expert p, .expert button {
+    margin: 0.5em;
+}
+.expert button {
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+}
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 3em;
+    padding: 4rem;
+}
+.about-list h3 , .packages-list h3 , .assistance-list h3{
+   margin: 15px;
+   margin-left: 7px;
+}
+.about-list li , .packages-list li , .assistance-list li{
+    margin: 7px;
+ }
+.about-list, .packages-list, .assistance-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+.footer-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3em;
+}
+.sm-icons{
+    display: flex;
+    flex-direction: row;
+}
+.sm-icons i {
+    margin: 0 1em 0 1em;
+}
+.hr{
+    margin: 0px 5em 0px 5em;
+}
+@media only screen and (max-width: 600px){
+    .footer-row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-list, .packages-list, .assistance-list {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .footer-end{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    .expert{
+        text-align: center;
+    }
+}

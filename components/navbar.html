@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <style>
+  
+
+    </style>
+    <script src="https://kit.fontawesome.com/1bc2765d38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <nav class="navbar">
+        <img id="logo" src="../img/logo.png" alt="">
+        <button onclick="disappear()" id="on"><i class="fa-solid fa-xmark"></i></button>
+        <button onclick="appear()" id="off"><i class="fa-solid fa-bars"></i></button> 
+        <div class="nav-item">
+            <ul id="dynamic_nav" class="nav-item dropdown-parent">
+                <li><a href="#">Home</a></li>
+                <div class="nav-item dropdown">
+                    <button class="dropbtn">Domestic Packages</button>
+                    <div class="dropdown-content">
+                        <a class="packages" href="#">Kashmir Tour Packages</a>
+                        <a class="packages" href="#">Laddakh Tour Packages</a>
+                        <a class="packages" href="#">Pahalgam Tour Packages</a>
+                        <a class="packages" href="#">Gulmarg Tour Packages</a>
+                    </div>
+                 </div>
+                 <li><a href="#">Destinations</a></li>
+            </ul>
+        </div>
+         
+         <div class="nav-item">
+             <button id="talk">Talk to an <br> expert</button>
+             <button id="call">Call us <br> +91 7889466366</button>
+         </div>
+         <div class="background-text">
+             <h1>Kashmir The Paradise On Earth</h1>
+             <p>Pahalgam | Sonamarg | Gulmarg | Mughal Gardens | Skiing | Heli Sking</p>
+         </div>
+     </nav>
+     <script>
+         function disappear(){
+            var x = document.getElementById("dynamic_nav");
+            var y = document.getElementById("on");
+            var z = document.getElementById("off");
+            x.style.display = "none";
+            y.style.display = "none";
+            z.style.display = "inherit";
+         }
+         function appear(){
+            var x = document.getElementById("dynamic_nav");
+            var a = document.getElementById("on");
+            var b = document.getElementById("off");
+            x.style.display = "flex";
+            a.style.display = "inherit";
+            b.style.display = "none";
+         }
+     </script>
+</body>
+</html>
