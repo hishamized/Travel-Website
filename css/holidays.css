@@ -59,7 +59,7 @@ hr{
     background-image: url(../img/Holidays/6.jpg);
 }
 .holiday-row-item{
-    height: 30vh;
+    height: 45vh;
     display: flex;
     align-items: center;
     padding: 2em;
