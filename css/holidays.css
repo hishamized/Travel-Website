@@ -4,12 +4,14 @@
 hr{
     width: 40%;
     color: aqua;
+    text-align: center;
 }
 .holiday-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .holiday-row{
     display: grid;
@@ -87,6 +89,11 @@ hr{
     .holiday-container{
        align-items: unset;
        text-align: center;
+    }
+    hr{
+        min-width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 }
 @media only screen and (min-width: 601px) and (max-width: 800px){

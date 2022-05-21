@@ -73,6 +73,7 @@ li{
 }
 .hr{
     margin: 0px 5em 0px 5em;
+    align-self: center;
 }
 @media only screen and (max-width: 600px){
     .footer-row{
@@ -94,5 +95,8 @@ li{
     }
     .expert{
         text-align: center;
+    }
+    .hr{
+        margin: 0px 0px 0px 0px;
     }
 }
